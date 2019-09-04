@@ -10,6 +10,8 @@ use Illuminate\Database\Seeder;
 
 use Illuminate\Support\Facades\Hash;
 
+use Carbon\Carbon;
+
 class PostsTableSeeder extends Seeder
 {
     /**
@@ -62,7 +64,8 @@ class PostsTableSeeder extends Seeder
             'content' => 'Nullam tempus, odio vel rhoncus dapibus, dolor lorem convallis mauris, laoreet elementum ex urna eu est. Quisque quis ligula nec mauris blandit porta eu eget purus. Sed eget felis id justo commodo fringilla vitae sed ligula. Fusce quis tempor turpis, tempor sollicitudin lacus. Praesent lacinia condimentum tristique. Aenean iaculis magna quis tempor gravida. Vestibulum dignissim nunc vitae pulvinar convallis. Vivamus ac porta lectus.',
             'category_id' => $category1->id,
             'image' => 'posts/1.jpg'  ,
-            'user_id' => $author1->id     
+            'user_id' => $author1->id,
+            'published_at' => Carbon::now()->toDateTimeString()  
         ]);
 
         $post2 = $author2->posts()->create([
@@ -70,7 +73,8 @@ class PostsTableSeeder extends Seeder
             'description' => 'Donec tincidunt, neque vitae finibus tristique, mi ex pulvinar est, fringilla pellentesque dui ante et augue. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
             'content' => 'Nunc quis suscipit neque, et ultrices eros. Suspendisse in risus vitae tortor rutrum porta. Aenean vitae libero magna. Morbi ultricies lectus ac hendrerit porttitor. Quisque vulputate purus quis condimentum vestibulum. Suspendisse volutpat libero ut felis placerat, nec pharetra sem sagittis. Nam ac neque ut ipsum interdum vestibulum.',
             'category_id' => $category4->id,
-            'image' => 'posts/2.jpg'         
+            'image' => 'posts/2.jpg',
+            'published_at' => Carbon::now()->toDateTimeString()          
         ]);
 
         $post3 = $author1->posts()->create([
@@ -78,7 +82,8 @@ class PostsTableSeeder extends Seeder
             'description' => 'Vivamus porta risus erat, sed imperdiet erat rutrum et. Duis in condimentum eros. Duis et mauris vitae nunc scelerisque dapibus. Proin cursus consequat eros quis pulvinar.',
             'content' => 'Sed a justo congue, interdum lectus varius, scelerisque risus. Ut sit amet leo lobortis, tincidunt urna sodales, semper metus. Nam augue ligula, vestibulum sit amet lorem vitae, cursus dignissim lorem. Donec vel quam consectetur, cursus turpis eget, consequat arcu. Donec imperdiet dapibus tellus, ac dignissim quam efficitur condimentum. Morbi eget auctor arcu. Vivamus rhoncus lectus eget erat sollicitudin molestie. Nam ultrices sem in mi consectetur ultricies. Pellentesque posuere metus tincidunt, viverra ipsum vitae, dapibus lacus.',
             'category_id' => $category3->id,
-            'image' => 'posts/3.jpg'         
+            'image' => 'posts/3.jpg',
+            'published_at' => Carbon::now()->toDateTimeString()          
         ]);
         
         $post4 = $author2->posts()->create([
@@ -86,7 +91,8 @@ class PostsTableSeeder extends Seeder
             'description' => 'Nam nulla nulla, lacinia pretium dictum a, feugiat in justo. Proin et purus vitae nisl pretium mollis. Duis nec ex nec justo rhoncus volutpat nec vitae enim.',
             'content' => 'Nam ut dui rutrum, porttitor ex eu, tempus nibh. Nulla quis velit lorem. Integer mi mauris, vestibulum imperdiet feugiat ac, eleifend ac tortor. Praesent nec dapibus nulla. Quisque auctor tellus nec libero eleifend, at semper felis bibendum. Nunc iaculis nisi et eleifend dignissim. Sed id risus rhoncus, aliquet ligula eget, eleifend tortor. Nunc convallis neque et convallis rutrum. Duis ac eros massa. Mauris est mauris, fringilla id eros nec, pellentesque varius lectus. Morbi eget porta tellus, eu egestas lectus. ',
             'category_id' => $category8->id,
-            'image' => 'posts/4.jpg'         
+            'image' => 'posts/4.jpg',
+            'published_at' => Carbon::now()->toDateTimeString()          
         ]);
 
         $tag1 = Tag::create([
