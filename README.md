@@ -3,7 +3,7 @@ A total blog website
 
 How to run:
 1. Open command prompt or git:Bash from the directory you want to setup this project.
-2. Run Command: git clone https://github.com/kzshoibal/Task3.git
+2. Run Command: git clone https://github.com/kzshoibal/Content-Management-System.git
 3. Run Command: cd Task3
 4. Run Command: Composer install
 5. Run Command: copy .env.example .env
