@@ -1,5 +1,14 @@
 # Content-Management-System
-A total blog website
+A Complete blog website. Includes 
+-> CRUD for Posts, Category and Tags
+-> Image file upload system
+-> Trash Post and Restore post system
+-> 2 types of User
+-> A welcome page to show the blog posts
+-> View each posts individually
+-> Search option with Pagination
+-> One-to-one & Many-to-Many relationship implimentation
+
 
 How to run:
 1. Open command prompt or git:Bash from the directory you want to setup this project.
