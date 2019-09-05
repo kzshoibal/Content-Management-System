@@ -1,5 +1,5 @@
 # Content-Management-System
-A Complete blog website. Includes 
+A Complete blog website made using Laravel framework. Includes 
 -> CRUD for Posts, Category and Tags
 -> Image file upload system
 -> Trash Post and Restore post system
@@ -24,4 +24,4 @@ or Run command at mysql directory: mysql>create database database_name
 10. Run Command: php artisan migrate --seed
 11. from Command prompt, Run Command: php artisan serve
 
-* Change the App URL to https://127.0.0.1:8000 if necessary. If the image files dont show on the website.
+* Use Valet for Mac/Windows If the image files dont show on the website.
