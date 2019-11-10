@@ -15,7 +15,7 @@ How to run:
 2. Run Command: git clone https://github.com/kzshoibal/Content-Management-System.git
 3. Run Command: cd Content-Management-System
 4. Run Command: Composer install
-5. Run Command: copy .env.example .env
+5. Run Command: cp .env.example .env
 6. Run Command: php artisan key:generate
 7. (Optional) Open .env change the DB_DATABASE to any other database name
 8. Create a database(name: Laravel or given_database_name) in the mysql server
