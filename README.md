@@ -1,5 +1,5 @@
 # Content-Management-System
-A Complete blog website made using Laravel framework. Includes 
+A Complete blog website made by using Laravel framework. Includes 
 -> CRUD for Posts, Category and Tags
 -> Image file upload system
 -> Trash Post and Restore post system
